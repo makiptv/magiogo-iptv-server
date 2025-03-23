@@ -40,7 +40,7 @@ def gzip_file(file_path):
 
 
 def generate_m3u8(channels):
-    magio_iptv_server_public_url = os.environ.get('MAGIO_SERVER_PUBLIC_URL', "http://127.0.0.1:5000")
+    magio_iptv_server_public_url = os.environ.get('MAGIO_SERVER_PUBLIC_URL', "https://plextv-b4ca92b14162.herokuapp.com:5000")
     with open("public/magioPlaylist.m3u8", "w", encoding="utf-8") as text_file:
         text_file.write("#EXTM3U\n")
         for channel in channels:
